@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <!-- Main component for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <h1>医药问答小助手</h1>
+        <p>基于医药知识图谱的问答机器人</p>
+        <p>
+            <a class="btn btn-lg btn-primary" href="{{ url_for('medical_bot') }}" role="button">Learn more &raquo;</a>
+        </p>
+    </div>
+
+    <div class="jumbotron">
+        <h1>就医问答小助手</h1>
+        <p>基于医疗系统知识图谱的问答机器人</p>
+        <p>
+            <a class="btn btn-lg btn-primary" href="{{ url_for('doctor_bot') }}" role="button">Learn more &raquo;</a>
+        </p>
+    </div>
+
+
+
+{% endblock %}

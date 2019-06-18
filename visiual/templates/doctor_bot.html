@@ -1,0 +1,41 @@
+{% extends 'layout.html' %}
+{% block content %}
+<!-- Main component for a primary marketing message or call to action -->
+<div class="jumbotron">
+    <h1>就医问答小助手</h1>
+    <p>您好，我是就医智能助理小欣，希望可以帮到您。</p>
+
+
+    <form role="form" method="post" target="nm_iframe">
+        <div class="form-group">
+            <label for="question">很乐意为您效劳，请问您有什么要咨询的吗？</label>
+            <input type="text" id="question" name="question" class="form-control" >
+        </div>
+
+
+        <div class="form-group">
+            <input type="submit" class="btn btn-success" name="submit" id="submit" value="咨询">
+        </div>
+
+
+        <div class="form-group">
+            <label for="answer">您的咨询</label>
+            <p></p>
+            <p>{{name[1]}}</p>
+{#            <input type="text" id="answer" name="answer" class="form-control">#}
+        </div>
+
+        <div class="form-group">
+            <label for="answer">小欣的建议</label>
+            <p></p>
+            <p>{{name[0]}}</p>
+{#            <input type="text" id="answer" name="answer" class="form-control">#}
+        </div>
+
+    </form>
+{#    <iframe id="id_iframe" name="nm_iframe" style="display:none;"></iframe>#}
+
+</div>
+
+
+{% endblock %}

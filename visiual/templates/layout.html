@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Navbar Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../static/css/html5shiv.min.js"></script>
+      <script src="../static/css/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                        aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">医疗知识图谱</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Nav header</li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="./">用户<span class="sr-only">(current)</span></a></li>
+                    <li><a href="../navbar-static-top/">登陆</a></li>
+                    <li><a href="../navbar-fixed-top/">注册</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
+
+
+    {% block content %}
+
+    {% endblock %}
+
+
+</div> <!-- /container -->
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../static/js/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../static/js/jquery.min.js"><\/script>')</script>
+<script src="../static/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+
+
+
+{##}
+{#{% block content %}#}
+{##}
+{#{% endblock %}#}
+{##}
+{##}
+{##}
+{#index#}
+{##}
+{#{% extends 'layout.html' %}#}
+{#{% block content %}#}
+{#...#}
+{#{% endblock %}#}
+{##}
+{#    <!-- Main component for a primary marketing message or call to action -->#}
+{#    <div class="jumbotron">#}
+{#        <h1>医疗问答小助手</h1>#}
+{#        <p>您好，我是医药智能助理小依，希望可以帮到您。</p>#}
+{#        <p>#}
+{#            <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>#}
+{#        </p>#}
+{#    </div>#}
+{##}
+{##}
+{##}
+{##}
+{#    <form role="form" method="post">#}
+{#        <div class="form-group">#}
+{#            <label for="question">咨询</label>#}
+{#            <input type="text" id="question" name="question" class="form-control">#}
+{#        </div>#}
+{##}
+{##}
+{##}
+{#    </form>#}
+{##}
+{##}
+{##}
+{#    <table width="600" align="center" cellspacing="0" cellpadding="0">#}
+{#        <tr height="60">#}
+{#            <th colspan="2">#}
+{#                医疗问答小助手#}
+{#            </th>#}
+{#        </tr>#}
+{#        <tr height="40">#}
+{#            <td>咨询</td>#}
+{#            <td>#}
+{#                <input type="text" id="question" value="感冒如何治疗">#}
+{#            </td>#}
+{#        </tr>#}
+{#        <tr height="60">#}
+{#            <td></td>#}
+{#            <td>#}
+{#                <input type="submit" value="提交">#}
+{#            </td>#}
+{#        </tr>#}
+{#        <tr height="40">#}
+{#            <td>解答</td>#}
+{#            <td>#}
+{#                <input type="text" id="answer" value="{{ answer }}">#}
+{#            </td>#}
+{#        </tr>#}
+{#        <tr height="40">#}
+{#            <td></td>#}
+{#            <td>#}
+{#                <a href="login.html" target="_blank">我是会员，立即登录</a>#}
+{#            </td>#}
+{#        </tr>#}
+{#    </table>#}
